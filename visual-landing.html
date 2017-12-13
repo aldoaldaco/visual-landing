@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="visual-landing">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `visual-landing`
+     * Landing of visual elements
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class VisualLanding extends Polymer.Element {
+      static get is() { return 'visual-landing'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'visual-landing'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(VisualLanding.is, VisualLanding);
+  </script>
+</dom-module>
